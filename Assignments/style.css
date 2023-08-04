@@ -1,0 +1,91 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.salam-div {
+    display: flex;
+}
+
+.salam {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.salam-img {
+    height: 35px;
+    width: fit-content;
+}
+
+.info {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    width: 550px;
+    line-height: 25px;
+    font-size: 19px;
+    color: rgb(10, 10, 10);
+    padding-left: 5px;
+    border-left: 3px groove rgb(247, 247, 247);
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 250px;
+    margin-left: 400px;
+}
+
+.image-div {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    row-gap: 20px;
+}
+
+/* .image-div1 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+} */
+
+img {
+    width: fit-content;
+    height: 172px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assgn-name {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.git-logo {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}

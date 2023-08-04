@@ -4,80 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-        }
-
-        body {}
-
-        .image-div {
-            display: grid;
-            grid-template-columns: 200px 200px 200px;
-            justify-content: center;
-            align-items: center;
-            row-gap: 20px;
-        }
-
-        /* .image-div1 {
-            display: grid;
-            grid-template-columns: 200px 200px;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-        } */
-
-        img {
-            width: fit-content;
-            height: 172px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            transition: transform 0.3s;
-        }
-
-        img:hover {
-            transform: scale(1.2);
-        }
-
-        /* .img-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .assgn-name {
-            font-size: medium;
-            text-align: center;
-        } */
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h3>Salam <span style="color: red;">D</span><span style="color: blue;">e</span><span
-            style="color: rgb(105, 172, 28);">v</span><span style="color: rgb(120, 14, 219);">s</span><span>!</span>
-        </h4>
-        <p>Abdul Bari here, learning Web and App Development from Saylani. Here are my assignments:</p>
-        <hr>
+
+    <div class="main-div">
+        <div class="salam-div">
+            <img class="salam-img" src="./images/hand_brown.png" alt="">
+            <h3 class="salam">Salam <span style="color: red;">D</span><span style="color: blue;">e</span><span
+                style="color: rgb(105, 172, 28);">v</span><span style="color: rgb(120, 14, 219);">s</span><span>!</span>
+        </h3>  
+        </div>
+        
+        <p class="info">"Abdul Bari here, learning Web and App Development from Saylani. Here are my assignments"</p>
 
         <div class="image-div">
-            <!-- <div class="image-box"> -->
-                <a href="./Task1/index.html"> <img src="./images/personal-information-modification-2x.png" alt=""></a>
-            <!-- <p class="assgn-name">Assignment 01 (About Myself)</p>
-            </div> -->
-            
-            <a href="./Task2/index.html"><img src="./images/food.png" alt=""></a>
+            <div class="image-box">
+                <a href="./Task1/index.html"> <img src="./images/personal-information-modification-2x.png" alt=""> </a>
+                <p class="assgn-name">Assignment 01</p>
+            </div>
 
-            <a href="./ChessGame/index.html"><img src="./images/chess.png" alt=""></a>
+            <div class="image-box">
+                <a href="./Task2/index.html"><img src="./images/food.png" alt=""></a>
+                <p class="assgn-name">Assignment 02</p>
+            </div>
 
-            <a href="./FormTask/index.html"><img src="./images/form-removebg-preview.png" alt=""></a>
-            
-            <a href="./ass5/index.html"><img src="./images/video-icon-1.png" alt=""></a>
-            
-            <a href="https://github.com/Abdul-Bari-Mazari/All-HTML-Assignments"><img src="./images/git.png" alt=""></a>
-        
+            <div class="image-box">
+                <a href="./ChessGame/index.html"><img src="./images/chess.png" alt=""></a>
+                <p class="assgn-name">Assignment 03</p>
+
+            </div>
+
+            <div class="image-box">
+                <a href="./FormTask/index.html"><img src="./images/form-removebg-preview.png" alt=""></a>
+                <p class="assgn-name">Assignment 04</p>
+            </div>
+
+            <div class="image-box">
+                <a href="./ass5/index.html"><img src="./images/video-icon-1.png" alt=""></a>
+                <p class="assgn-name">Assignment 05</p>
+            </div>
+
+            <div class="image-box">
+                <a href="./Ass6/index.html"><img src="./images/saylani.png"
+                        alt=""></a>
+                <p class="assgn-name">Assignment 06</p>
+            </div>
         </div>
+    </div>
+
+    <a href="https://github.com/Abdul-Bari-Mazari?tab=repositories" target="_blank"><img class="git-logo" src="./images/git.png" alt=""></a>
+
+
+
 </body>
 
 </html>
