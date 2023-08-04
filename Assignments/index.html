@@ -11,67 +11,73 @@
             font-size: large;
         }
 
-        body{
-            background-color:rgb(189, 197, 191);
+        body {}
+
+        .image-div {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
         }
 
-        .headings {
+        /* .image-div1 {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        } */
+
+        img {
+            width: fit-content;
+            height: 172px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        /* .img-box {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
-        h1 {
-            text-decoration: underline;
-            color: crimson;
-        }
-
-        h2 {
-            text-decoration: underline;
-            color:darkgreen;
-        }
-
-        table{
-            margin-top: 30px;
-            background-color: rgb(231, 229, 229);
-        }
-        td{
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-        }
+        .assgn-name {
+            font-size: medium;
+            text-align: center;
+        } */
     </style>
 </head>
 
 <body>
-    <div class="headings">
-        <h1>PORTFOLIO</h1>
-        <h2>"HTML ASSIGNMENTS"</h2>
-    </div>
     <h3>Salam <span style="color: red;">D</span><span style="color: blue;">e</span><span
             style="color: rgb(105, 172, 28);">v</span><span style="color: rgb(120, 14, 219);">s</span><span>!</span>
         </h4>
         <p>Abdul Bari here, learning Web and App Development from Saylani. Here are my assignments:</p>
         <hr>
-        <table cellspacing="0" border="1" width="100%">
-            <tr>
-                <td align="center">Assignment# 01</td>
-                <td align="center">Assignment# 02</td>
-                <td align="center">Assignment# 03</td>
-                <td align="center">Assignment# 04</td>
-                <td align="center">Assignment# 05</td>
-            </tr>
-            <tr>
-                <td align="center"><a href="./Task1/index.html">Link</a></td>
-                <td align="center"><a href="./Task2/index.html">Link</a></td>
-                <td align="center"><a href="./ChessGame/index.html">Link</a></td>
-                <td align="center"><a href="./FormTask/index.html">Link</a></td>
-                <td align="center"><a href="./ass5/index.html">Link</a></td>
-            </tr>
-        </table>
 
+        <div class="image-div">
+            <!-- <div class="image-box"> -->
+                <a href="./Task1/index.html"> <img src="./images/personal-information-modification-2x.png" alt=""></a>
+            <!-- <p class="assgn-name">Assignment 01 (About Myself)</p>
+            </div> -->
+            
+            <a href="./Task2/index.html"><img src="./images/food.png" alt=""></a>
 
+            <a href="./ChessGame/index.html"><img src="./images/chess.png" alt=""></a>
 
+            <a href="./FormTask/index.html"><img src="./images/form-removebg-preview.png" alt=""></a>
+            
+            <a href="./ass5/index.html"><img src="./images/video-icon-1.png" alt=""></a>
+            
+            <a href="https://github.com/Abdul-Bari-Mazari/All-HTML-Assignments"><img src="./images/git.png" alt=""></a>
+        
+        </div>
 </body>
 
 </html>
